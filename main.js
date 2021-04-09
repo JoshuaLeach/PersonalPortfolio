@@ -9,6 +9,7 @@ $("document").ready(function() {
 
 })
 
+
 function viewMoreButtonAnimate() {
     var seconds = 2;
     // make button go up and down
