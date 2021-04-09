@@ -1,0 +1,92 @@
+Website Optimisation
+
+Overview:
+
+Here the task was to optimise the css loaded on each page of the website, currently most of the css was stored in one file, which was called on every page.
+This was inneficient as a lot of the css was specific to different pages. This meant that by splitting up the css file into smaller, more specific css files,
+the browser would only have to retreive the css needed for that page.
+
+Skills Used:
+
+- Understanding xslt files,
+- Using task managers such as dev ops,
+- Using chrome's dev tools such as coverage and network tab,
+- Working with minified files,
+- Being able to test relevant sections 
+
+-----------------------------------------------------------------
+
+Build & Design of Marketplace page
+
+Overview:
+
+Currently the page to display the user's sales from their marketplace was unresponsive in mobile and was difficult to read from with a large amount of sales. I 
+decided it would be ideal to, rather than make the page responsive in mobile (which would require a different design), to completely rebuild the page so it could be 
+scaled up and down without the design changing. This would be more practical as it wouldn't require more classes for the different designs and it wouldn't require
+multiple html structures. After designing the page I worked on building the page with dummy data, this meant I could get a full idea of how the page might
+look in different scenarios, such as with lots of sales, few, and no sales. 
+
+Skills Used:
+
+- Designing a page to be efficient
+- Writing an accurate test plan to test all functionality and scenarios
+- Writing dummy data 
+- Using dummy data for testing purposes 
+- Implementing xml in place of dummy data
+
+-------------------------------------------------------------------
+
+List one more project Here
+
+Skills Used:
+
+- 
+-
+-
+-
+-
+
+--------------------------------------------------------------------
+
+Skills I have learnt overall
+
+- Estimating task durations
+- Time management,
+- Working with source control 
+- Prioritising tasks,
+- 
+
+--------------------------------------------------------------------
+
+About
+
+Hi I'm Josh, I have been a web developer apprentice since September 2020. I have a passion for building simplistic, efficient and unique web pages.
+I have had experience with HTML, CSS, JS, XML, XSLT and MVC. 
+
+--------------------------------------------------------------------
+
+Goals
+
+FrontEnd:
+- improve js Skills
+- improving naming convention use
+- improve designing and UX Skills
+
+BackEnd:
+- Become fluent in c#
+- Learn ASP.NET 
+- Become more comfortable working with MVC
+
+---------------------------------------------------------------------
+
+Footer 
+
+Socials
+
+list of icons including:
+
+LinkedIn,
+GitHub,
+mail/contact page
+
+

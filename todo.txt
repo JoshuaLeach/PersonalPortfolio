@@ -1,0 +1,6 @@
+
+|    Task    |    Description    |    Priority    |    Expected Time    |
+-------------------------------------------------------------------------
+ Spacing      Spaces below blue  
+ sections     section need to be
+              spaced out
