@@ -79,11 +79,11 @@ function aboutScrollListener(rollBack) {
 function viewMoreButtonListener() {
     $(".buttonContainer__viewmore--button").mouseover(function() {
         $(".buttonContainer__arrow").css({ "transform": "rotate(90deg)" });
-        $(".buttonContainer__arrow").attr("src", "/Images/whitearrow.svg")
+        $(".buttonContainer__arrow").attr("src", "./Images/whitearrow.svg")
     })
     $(".buttonContainer__viewmore--button").mouseleave(function() {
         $(".buttonContainer__arrow").css({ "transform": "rotate(0deg)" });
-        $(".buttonContainer__arrow").attr("src", "/Images/blackarrow.svg")
+        $(".buttonContainer__arrow").attr("src", "./Images/blackarrow.svg")
     })
 }
 
