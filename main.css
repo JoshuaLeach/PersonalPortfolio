@@ -412,6 +412,7 @@ body {
     align-self: center;
     color: rgb(236, 236, 236);
     transition: 0.1s linear;
+    text-decoration: none;
 }
 
 .icon:hover {
@@ -488,16 +489,20 @@ body {
     }
 }
 
+@media(max-width: 900px) {
+    .buttonContainer {
+        margin-bottom: -25vh;
+    }
+}
+
 @media (max-width: 475px) {
     .footerBackground__iconContainer {
         width: 95%;
     }
-
     .goalSection__infoBox {
         width: 80%;
         height: fit-content;
     }
-
     .goalSection__frontend,
     .goalSection__backend {
         padding-bottom: 20px;

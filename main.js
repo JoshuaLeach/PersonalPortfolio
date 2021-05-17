@@ -44,8 +44,8 @@ function closeMenu() {
 
 function aboutScrollListener(rollBack) {
     $(window).scroll(function() {
-        var hT = $("#aboutSection").offset().top;
-        var hH = $("#aboutSection").outerHeight();
+        var hT = $(".aboutSection__progressBarContainer").offset().top;
+        var hH = $(".aboutSection__progressBarContainer").outerHeight();
         var wH = $(window).height();
         var wS = $(this).scrollTop();
         if (wS > (hT + hH - wH) && (hT > wS) && (wS + wH > hT + hH)) {
@@ -109,4 +109,15 @@ function resetLogo() {
         $(".middleContainer__logo").css({ "transition": "transform 0s" });
         $(".middleContainer__logo").css({ 'transform': 'rotate(' + 0 + 'deg)' });
     }, 600);
+}
+
+// checks if element can be seen on screen
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
 }
