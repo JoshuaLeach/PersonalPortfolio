@@ -6,6 +6,12 @@ body {
     margin: 0;
 }
 
+@font-face {
+    font-family: 'Agency FB';
+    font-style: normal;
+    src: local('Agency FB'), url('https://fonts.cdnfonts.com/s/14864/AGENCYB.woff') format('woff');
+}
+
 .overlay {
     top: 0;
     left: 0;
