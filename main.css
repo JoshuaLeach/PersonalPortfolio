@@ -5,8 +5,8 @@ html {
 body {
     margin: 0;
 }
-@font-face{font-family:Agency FB;font-style:normal;font-weight:400;src:local('Agency FB'),local('AgencyFB-Regular'),url(http://allfont.net/cache/fonts/agency-fb_0b9596562659a0772f5e24c22cae921b.woff) format('woff'),url(http://allfont.net/cache/fonts/agency-fb_0b9596562659a0772f5e24c22cae921b.ttf) format('truetype')}
-@font-face{font-family:Agency FB Bold;font-style:normal;font-weight:700;src:local('Agency FB Bold'),local('AgencyFB-Bold'),url(http://allfont.net/cache/fonts/agency-fb-bold_cee84847c4ab16cf2b0952d063712724.woff) format('woff'),url(http://allfont.net/cache/fonts/agency-fb-bold_cee84847c4ab16cf2b0952d063712724.ttf) format('truetype')}
+@font-face{font-family:Agency FB-Regular;font-style:normal;font-weight:400;src:local('Agency FB'),local('AgencyFB-Regular'),url(http://allfont.net/cache/fonts/agency-fb_0b9596562659a0772f5e24c22cae921b.woff) format('woff'),url(http://allfont.net/cache/fonts/agency-fb_0b9596562659a0772f5e24c22cae921b.ttf) format('truetype')}
+@font-face{font-family:Agency FB-Bold;font-style:normal;font-weight:700;src:local('Agency FB Bold'),local('AgencyFB-Bold'),url(http://allfont.net/cache/fonts/agency-fb-bold_cee84847c4ab16cf2b0952d063712724.woff) format('woff'),url(http://allfont.net/cache/fonts/agency-fb-bold_cee84847c4ab16cf2b0952d063712724.ttf) format('truetype')}
 
 .overlay {
     top: 0;
@@ -41,7 +41,7 @@ body {
     align-self: center;
     overflow-x: hidden;
     color: white;
-    font-family: Agency FB;
+    font-family: Agency FB-Regular;
     font-size: 35px;
 }
 
@@ -80,7 +80,7 @@ body {
 .hamburgerBody__row {}
 
 .hamburgerBody__text {
-    font-family: Agency FB;
+    font-family: Agency FB-Regular;
     text-align: center;
 }
 
@@ -128,7 +128,7 @@ body {
     width: fit-content;
     margin: 0;
     align-self: center;
-    font-family: Agency FB;
+    font-family: Agency FB-Regular;
     font-weight: 500;
     color: #55A8FF;
     font-size: 40px;
@@ -138,7 +138,7 @@ body {
     width: fit-content;
     margin: 0 0 5px 0;
     align-self: center;
-    font-family: Agency FB Bold;
+    font-family: Agency FB-Bold;
     color: black;
     font-size: 45px;
 }
@@ -147,7 +147,7 @@ body {
     width: fit-content;
     margin: 0;
     align-self: center;
-    font-family: Agency FB;
+    font-family: Agency FB-Regular;
     color: grey;
     font-size: 25px;
     font-weight: 500;
@@ -178,7 +178,7 @@ body {
     border-radius: 15px;
     border: solid 3px #55A8FF;
     text-decoration: none;
-    font-family: Agency FB;
+    font-family: Agency FB-Regular;
     letter-spacing: 2px;
     font-size: 30px;
     transition: 0.5s;
@@ -219,7 +219,7 @@ body {
 
 .aboutSection__about--h1 {
     color: white;
-    font-family: Agency FB;
+    font-family: Agency FB-Regular;
     font-size: 60px;
     margin: 0;
 }
@@ -241,7 +241,7 @@ body {
 .aboutSection__text {
     width: 80%;
     color: white;
-    font-family: Agency FB;
+    font-family: Agency FB-Regular;
     font-size: 30px;
 }
 
@@ -262,7 +262,7 @@ body {
 
 .progressBar__title {
     color: white;
-    font-family: Agency FB;
+    font-family: Agency FB-Regular;
     font-size: 30px;
     display: flex;
     justify-content: center;
@@ -308,7 +308,7 @@ body {
 
 .goalSection__goals--h1 {
     color: white;
-    font-family: Agency FB;
+    font-family: Agency FB-Regular;
     font-size: 60px;
     margin: 0;
 }
@@ -335,7 +335,7 @@ body {
     justify-content: flex-start;
     width: 50%;
     height: 100%;
-    font-family: Agency FB Bold;
+    font-family: Agency FB-Bold;
 }
 
 .goalSection__header {
@@ -348,7 +348,7 @@ body {
     flex-direction: column;
     width: 50%;
     height: 100%;
-    font-family: Agency FB Bold;
+    font-family: Agency FB-Bold;
     border-left: 1px solid #A6A6A6;
 }
 
@@ -386,7 +386,7 @@ body {
 }
 
 .finalBox__header {
-    font-family: Agency FB;
+    font-family: Agency FB-Regular;
     text-align: center;
 }
 
