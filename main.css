@@ -5,8 +5,8 @@ html {
 body {
     margin: 0;
 }
-@font-face{font-family:agency fb;font-style:normal;font-weight:400;src:local('Agency FB'),local('AgencyFB-Regular'),url(http://allfont.net/cache/fonts/agency-fb_0b9596562659a0772f5e24c22cae921b.woff) format('woff'),url(http://allfont.net/cache/fonts/agency-fb_0b9596562659a0772f5e24c22cae921b.ttf) format('truetype')}
-@font-face{font-family:Agency FB;font-style:normal;font-weight:700;src:local('Agency FB Bold'),local('AgencyFB-Bold'),url(http://allfont.net/cache/fonts/agency-fb-bold_cee84847c4ab16cf2b0952d063712724.woff) format('woff'),url(http://allfont.net/cache/fonts/agency-fb-bold_cee84847c4ab16cf2b0952d063712724.ttf) format('truetype')}
+@font-face{font-family:Agency FB;font-style:normal;font-weight:400;src:local('Agency FB'),local('AgencyFB-Regular'),url(http://allfont.net/cache/fonts/agency-fb_0b9596562659a0772f5e24c22cae921b.woff) format('woff'),url(http://allfont.net/cache/fonts/agency-fb_0b9596562659a0772f5e24c22cae921b.ttf) format('truetype')}
+@font-face{font-family:Agency FB Bold;font-style:normal;font-weight:700;src:local('Agency FB Bold'),local('AgencyFB-Bold'),url(http://allfont.net/cache/fonts/agency-fb-bold_cee84847c4ab16cf2b0952d063712724.woff) format('woff'),url(http://allfont.net/cache/fonts/agency-fb-bold_cee84847c4ab16cf2b0952d063712724.ttf) format('truetype')}
 
 .overlay {
     top: 0;
@@ -138,7 +138,7 @@ body {
     width: fit-content;
     margin: 0 0 5px 0;
     align-self: center;
-    font-family: Agency FB;
+    font-family: Agency FB Bold;
     color: black;
     font-size: 45px;
 }
@@ -335,7 +335,7 @@ body {
     justify-content: flex-start;
     width: 50%;
     height: 100%;
-    font-family: Agency FB;
+    font-family: Agency FB Bold;
 }
 
 .goalSection__header {
@@ -348,7 +348,7 @@ body {
     flex-direction: column;
     width: 50%;
     height: 100%;
-    font-family: Agency FB;
+    font-family: Agency FB Bold;
     border-left: 1px solid #A6A6A6;
 }
 
