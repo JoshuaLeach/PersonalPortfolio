@@ -148,7 +148,7 @@ body {
     font-family: Agency FB;
     color: grey;
     font-size: 25px;
-    font-weight: 545;
+    font-weight: 500;
 }
 
 .middleContainer__logo {
@@ -185,7 +185,7 @@ body {
     background-color: #55A8FF;
     color: white;
     transition: 0.5s;
-    font-weight: 500px;
+    font-weight: 500;
 }
 
 .buttonContainer__arrow {
