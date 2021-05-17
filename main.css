@@ -393,9 +393,9 @@ body {
 
 .footerBackground {
     display: flex;
-    justify-content: center;
+    align-items: center;
     background-color: #363636;
-    flex-direction: row;
+    flex-direction: column;
     height: 350px;
 }
 
@@ -406,6 +406,32 @@ body {
     width: 25%;
     height: 100px;
     margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.footerBackground__infoContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.infoContainer__headerText {
+    color: rgb(201, 201, 201);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.infoContainer__underLine {
+    margin: 10px;
+    width: 350px;
+    height: 0.5px;
+    background-color: rgb(179, 179, 179);
+}
+
+.infoContainer__copyrightText {
+    color: rgb(129, 129, 129);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
 }
 
 .icon {
@@ -498,6 +524,12 @@ body {
 @media (max-width: 475px) {
     .footerBackground__iconContainer {
         width: 95%;
+    }
+    .footerBackground__infoContainer {
+        width: 80%;
+    }
+    .infoContainer__underLine {
+        width: 100%;
     }
     .goalSection__infoBox {
         width: 80%;
