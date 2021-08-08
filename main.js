@@ -6,7 +6,6 @@ $("document").ready(function() {
     viewMoreButtonListener()
     aboutScrollListener(rollBack)
     viewMoreButtonAnimate()
-
 })
 
 
