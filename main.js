@@ -1,78 +1,46 @@
 $("document").ready(function() {
 
-    var rollBack = true;
-
     codeLogoListener()
     viewMoreButtonListener()
-    aboutScrollListener(rollBack)
     viewMoreButtonAnimate()
+
+    setInitialCarouselPositions()
+    carouselListener()
+    carouselToggles()
 
 })
 
-
-function viewMoreButtonAnimate() {
-    var seconds = 2;
-    // make button go up and down
-    $(".buttonContainer__viewmore--button").css("margin-bottom", "-20px")
-    setTimeout(function() {
-        $(".buttonContainer__viewmore--button").css("margin-bottom", "-0px")
-    }, 500)
-    setTimeout(viewMoreButtonAnimate, seconds * 1000);
+function carouselToggles() {
+    $(".toggle").click(function(e) {
+        $(".toggle").removeClass("toggle--checked")
+        e.target.classList.add("toggle--checked")
+    });
 }
 
-function hamburgerClick() {
-    $(".hamburgerMenu__headerContainer").css("width", "400px")
-    setTimeout(function() {
-        $(".hamburgerBody").css("display", "block")
-    }, 350);
-    setTimeout(function() {
-        $(".hamburgerBody").css("height", "300px")
-    }, 400);
-    $(".overlay").css("display", "block")
+function setInitialCarouselPositions() {
+    // this should set the correct positions on page load
+    $("#slide1").css("left", "0%")
+    $("#slide2").css("left", "100%")
+    $("#slide3").css("left", "200%")
 }
 
-function closeMenu() {
-    if ($(".hamburgerBody").height() == 300) {
-        $(".hamburgerBody").css("height", "0px")
-        setTimeout(function() {
-            $(".hamburgerBody").css("display", "none")
-            $(".hamburgerMenu__headerContainer").css("width", "0px")
-        }, 200);
-        $(".overlay").css("display", "none")
-    }
-}
-
-function aboutScrollListener(rollBack) {
-    $(window).scroll(function() {
-        var hT = $(".aboutSection__progressBarContainer").offset().top;
-        var hH = $(".aboutSection__progressBarContainer").outerHeight();
-        var wH = $(window).height();
-        var wS = $(this).scrollTop();
-        if (wS > (hT + hH - wH) && (hT > wS) && (wS + wH > hT + hH)) {
-
-            if (rollBack) {
-                $(".progressBar__htmlProgress").css("width", "65%");
-            }
-            setTimeout(function() {
-                $(".progressBar__htmlProgress").css("width", "49.2%");
-            }, 600);
-
-            if (rollBack) {
-                $(".progressBar__cssProgress").css("width", "65%");
-            }
-            setTimeout(function() {
-                $(".progressBar__cssProgress").css("width", "57.4%");
-            }, 600);
-
-            if (rollBack) {
-                $(".progressBar__jsProgress").css("width", "65%");
-            }
-            setTimeout(function() {
-                $(".progressBar__jsProgress").css("width", "32.8%");
-            }, 600);
-
-            rollBack = false;
-        }
+function carouselListener() {
+    // to get the percentage you do (slide number * 100) - 100
+    // with this formulae we can dynamically add slides
+    $("#carouselButton1").click(function() {
+        $("#slide1").css("left", "0%")
+        $("#slide2").css("left", "100%")
+        $("#slide3").css("left", "200%")
+    });
+    $("#carouselButton2").click(function() {
+        $("#slide1").css("left", "-100%")
+        $("#slide2").css("left", "0%")
+        $("#slide3").css("left", "100%")
+    });
+    $("#carouselButton3").click(function() {
+        $("#slide1").css("left", "-200%")
+        $("#slide2").css("left", "-100%")
+        $("#slide3").css("left", "0%")
     });
 }
 
@@ -111,13 +79,12 @@ function resetLogo() {
     }, 600);
 }
 
-// checks if element can be seen on screen
-function isInViewport(element) {
-    const rect = element.getBoundingClientRect();
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
+function viewMoreButtonAnimate() {
+    var seconds = 2;
+    // make button go up and down
+    $(".buttonContainer__viewmore--button").css("margin-bottom", "-20px")
+    setTimeout(function() {
+        $(".buttonContainer__viewmore--button").css("margin-bottom", "-0px")
+    }, 500)
+    setTimeout(viewMoreButtonAnimate, seconds * 1000);
 }

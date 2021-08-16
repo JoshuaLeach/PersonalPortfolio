@@ -210,206 +210,203 @@ body {
 
 .middleSection {
     display: flex;
+    align-items: center;
     flex-direction: column;
+    padding-top: 200px;
     width: 100%;
-    height: 1600px;
-    clip-path: polygon(78% 0%, 65% 6%, 35% 6%, 22% 0%, 0% 0%, 0% 91%, 100% 100%, 100% 0%);
+    height: fit-content;
+    clip-path: polygon(78% 0, 65% 12%, 35% 12%, 22% 0, 0 0, 0 91%, 100% 100%, 100% 0);
     background-color: #55A8FF;
 }
 
-.aboutSection {
-    margin: 300px 0 100px 0;
-    width: 100%;
-}
-
-.aboutSection__titleContainer {
-    display: flex;
-    width: 37%;
-    height: 80px;
-    justify-content: flex-end;
-}
-
-.aboutSection__about--h1 {
+.middleSection__header {
     color: white;
     font-family: 'Agency FB-Regular';
-    font-size: 60px;
-    margin: 0;
+    font-size: 50px;
+    margin-bottom: 40px;
+    ;
 }
 
-.aboutSection__infoContainer {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 100%;
+.middleSection__infoContainer {
+    background-color: #363636;
+    width: 748px;
+    height: fit-content;
+    border-radius: 20px;
+    padding: 10px 50px 10px 50px;
+    margin-bottom: 200px;
 }
 
-.aboutSection__textBox {
-    display: flex;
-    justify-content: flex-end;
-    width: 30%;
-    margin-right: -100px;
-}
-
-.aboutSection__text {
-    width: 80%;
-    color: white;
+.infoContainer__text {
     font-family: 'Agency FB-Regular';
-    font-size: 30px;
-}
-
-.aboutSection__progressBarContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 30%;
-}
-
-.progressBar {
-    display: flex;
-    margin-top: 40px;
-    width: 100%;
-    height: 54px;
-    background-color: #595959;
-}
-
-.progressBar__title {
     color: white;
-    font-family: 'Agency FB-Regular';
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    width: 18%;
-    background-color: #757575;
-    height: 100%;
-}
-
-.progressBar__title--p {
-    margin: 0;
-    align-self: center;
-}
-
-.progressBar__htmlProgress {
-    height: 100%;
-    width: 0%;
-    background-color: white;
-    transition: 0.6s ease-in-out;
-}
-
-.progressBar__cssProgress {
-    height: 100%;
-    width: 0%;
-    background-color: white;
-    transition: 0.6s ease-in-out;
-}
-
-.progressBar__jsProgress {
-    height: 100%;
-    width: 0%;
-    background-color: white;
-    transition: 0.6s ease-in-out;
-}
-
-.goalSection {}
-
-.goalSection__titleContainer {
-    display: flex;
-    width: 37%;
-    height: 80px;
-    justify-content: flex-end;
-}
-
-.goalSection__goals--h1 {
-    color: white;
-    font-family: 'Agency FB-Regular';
-    font-size: 60px;
-    margin: 0;
-}
-
-.goalSection__box {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.goalSection__infoBox {
-    display: flex;
-    margin-top: 20px;
-    border-radius: 15px;
-    background-color: white;
-    width: 40%;
-    height: 230px;
-    border: 1px solid #A6A6A6;
-}
-
-.goalSection__frontend {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 50%;
-    height: 100%;
-    font-family: 'Agency FB-Bold';
-}
-
-.goalSection__header {
-    text-align: center;
-}
-
-.goalSection__backend {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    width: 50%;
-    height: 100%;
-    font-family: 'Agency FB-Bold';
-    border-left: 1px solid #A6A6A6;
-}
-
-.goalSection__goalsInfo {
-    align-self: center;
-    width: 80%;
-    margin: 0;
-    text-align: center;
-    font-size: 20px;
-    color: grey;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    line-height: 35px;
 }
 
 .bottomSection {
-    height: 500px;
-    width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
 }
 
-.finalBox {
+.bottomSection__keyFeaturesContainer {
+    margin-top: -100px;
+    z-index: 500;
     display: flex;
-    justify-content: center;
-    margin-top: -140px;
-    border: solid 1px #A6A6A6;
-    width: 40%;
-    height: 300px;
-    border-radius: 15px;
-    z-index: 100;
+    width: 1200px;
+    height: 700px;
+    flex-direction: row;
+    margin-bottom: 100px;
     background-color: white;
+    border-radius: 25px;
+    border: solid #DBDBDB 1.5px;
+    box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.12);
 }
 
-.finalBox__subSection {
-    width: 32.3%;
-    background-color: rgba(255, 255, 255, 0);
+.keyFeaturesContainer__box {
+    display: flex;
+    width: 400px;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
 }
 
-.finalBox__header {
+.keyFeaturesContainer__box--borderRight {
+    border-right: solid #DBDBDB 2px;
+}
+
+.keyFeaturesContainer__icon {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 70px;
+    height: fit-content;
+}
+
+.keyFeaturesContainer__header {
+    color: #55A8FF;
     font-family: 'Agency FB-Regular';
-    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
 }
 
-.border-right {
-    border-right: solid 1px #A6A6A6;
+.keyFeaturesContainer__textArea {
+    width: 80%;
+    height: auto;
+    font-family: 'Agency FB-Regular';
+    font-size: 30px;
+    line-height: 40px;
+    color: #575757;
+    margin-bottom: 20px;
+}
+
+.bottomSection__projectBannerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: #363636;
+    margin-bottom: 50px;
+}
+
+.projectBannerContainer__text {
+    color: white;
+    font-family: 'Agency FB-Regular';
+    font-size: 30px;
+    letter-spacing: 1.5px;
+}
+
+.carouselSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 550px;
+}
+
+.carouselWindow {
+    display: flex;
+    position: absolute;
+    background-color: blue;
+    width: 500px;
+    height: 400px;
+    overflow-x: hidden;
+}
+
+.carouselSlide {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: ease-in-out 0.3s;
+}
+
+.carouselNavContainer {
+    display: flex;
+    margin-top: 415px;
+}
+
+.toggle {
+    width: 13px;
+    height: 13px;
+    background-color: white;
+    border: solid 3px #55A8FF;
+    margin: 0 8px 0 8px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.toggle:hover {
+    border: solid 5px #55A8FF;
+    width: 11px;
+    height: 11px;
+}
+
+.toggle--checked {
+    border: solid 5px #55A8FF;
+    width: 11px;
+    height: 11px;
+}
+
+.carouselSlide__headerContainer {
+    display: flex;
+    justify-content: center;
+    border-bottom: solid 1.5px rgb(163, 163, 163);
+    width: 80%;
+    padding-bottom: 3px;
+    margin-bottom: 15px;
+}
+
+.carouselSlide__header {
+    font-family: 'Agency FB-Regular';
+    font-size: 45px;
+    color: #464646;
+}
+
+.carouselSlide__content {
+    width: 80%;
+    justify-content: center;
+}
+
+.carouselSlide__text {
+    text-align: justify;
+    color: #797979;
+    font-family: 'Agency FB-Regular';
+    font-size: 25px;
 }
 
 .footerBackground {
     display: flex;
     align-items: center;
-    background-color: #363636;
+    background-color: #2b2b2b;
     flex-direction: column;
     height: 350px;
 }
@@ -467,9 +464,40 @@ body {
     }
 }
 
-@media (max-width: 1100px) {
-    .progressBar__title {
-        font-size: 20px;
+@media (max-width: 1331px) {
+    .bottomSection__keyFeaturesContainer {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media (max-width: 1156px) {
+    /* Split into individual Boxes */
+    .bottomSection__keyFeaturesContainer {
+        flex-direction: column;
+        border-radius: 0;
+        border: 0;
+        box-shadow: none;
+        background-color: rgba(0, 0, 0, 0);
+        width: fit-content;
+    }
+    .keyFeaturesContainer__box {
+        background-color: white;
+        border: solid #DBDBDB 1.5px;
+        box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.12);
+        border-radius: 15px;
+        margin-bottom: 40px;
+    }
+    .keyFeaturesContainer__textArea {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .middleSection__infoContainer {
+        width: 70%;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
@@ -480,47 +508,14 @@ body {
     .middleSection {
         margin-top: 100px;
         clip-path: none;
-        height: fit-content;
-    }
-    .aboutSection {
-        margin-top: 100px;
-    }
-    .aboutSection__text {
-        width: 100%;
-    }
-    .goalSection__infoBox {
-        width: 400px;
-    }
-    .goalSection__box {
-        padding-bottom: 280px;
+        padding-top: 80px;
     }
 }
 
 @media (max-width: 768px) {
-    .aboutSection__titleContainer {
-        width: 100%;
-        justify-content: center;
-    }
-    .aboutSection__text {
-        width: 80%;
-    }
-    .aboutSection__infoContainer {
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .aboutSection__textBox {
-        justify-content: center;
-        width: 80%;
-        margin: 0;
-    }
-    .aboutSection__progressBarContainer {
-        width: 75%;
-    }
-    .goalSection__titleContainer {
-        width: 100%;
-        justify-content: center;
-        align-items: center;
+    .middleSection__header {
+        text-align: center;
+        margin: 0 70px 40px 70px;
     }
 }
 
@@ -536,6 +531,15 @@ body {
     }
 }
 
+@media (max-width: 500px) {
+    .projectHeaderContainer {
+        width: 80%;
+    }
+    .carouselWindow {
+        width: 100%;
+    }
+}
+
 @media (max-width: 475px) {
     .footerBackground__iconContainer {
         width: 95%;
@@ -546,12 +550,67 @@ body {
     .infoContainer__underLine {
         width: 100%;
     }
-    .goalSection__infoBox {
-        width: 80%;
-        height: fit-content;
+}
+
+@media (max-width: 465px) {
+    .bottomSection__keyFeaturesContainer {
+        width: 90%;
     }
-    .goalSection__frontend,
-    .goalSection__backend {
-        padding-bottom: 20px;
+    .keyFeaturesContainer__box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 438px) {
+    .projectBannerContainer__text {
+        font-size: 25px;
+    }
+    .carouselWindow {
+        height: 450px;
+    }
+    .carouselSection {
+        height: 600px;
+    }
+    .carouselNavContainer {
+        margin-top: 475px;
+    }
+    .carouselSlide__header {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 396px) {
+    .carouselWindow {
+        height: 475px;
+    }
+    .carouselNavContainer {
+        margin-top: 500px;
+    }
+}
+
+@media (max-width: 370px) {
+    .carouselSlide__header {
+        font-size: 35px;
+    }
+    .carouselSection {
+        height: 650px;
+    }
+    .carouselWindow {
+        height: 520px;
+    }
+    .carouselNavContainer {
+        margin-top: 545px;
+    }
+}
+
+@media (max-width: 329px) {
+    .carouselWindow {
+        height: 550px;
+    }
+    .carouselSlide__header {
+        font-size: 34px;
+    }
+    .carouselNavContainer {
+        margin-top: 560px;
     }
 }
