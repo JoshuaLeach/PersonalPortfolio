@@ -260,9 +260,9 @@ body {
     flex-direction: row;
     margin-bottom: 100px;
     background-color: white;
-    border-radius: 50px;
+    border-radius: 25px;
     border: solid #DBDBDB 1.5px;
-    box-shadow: 0px 0px 14px 6px rgba(0,0,0,0.12);
+    box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.12);
 }
 
 .keyFeaturesContainer__box {
@@ -274,7 +274,7 @@ body {
 }
 
 .keyFeaturesContainer__box--borderRight {
-    border-right: solid  #DBDBDB 2px;
+    border-right: solid #DBDBDB 2px;
 }
 
 .keyFeaturesContainer__icon {
@@ -322,7 +322,6 @@ body {
 .carouselSection {
     display: flex;
     flex-direction: column;
-
     align-items: center;
     width: 100%;
     height: 550px;
@@ -466,42 +465,35 @@ body {
 }
 
 @media (max-width: 1331px) {
-
     .bottomSection__keyFeaturesContainer {
         width: 80%;
         height: auto;
     }
-
 }
 
 @media (max-width: 1156px) {
     /* Split into individual Boxes */
-
     .bottomSection__keyFeaturesContainer {
         flex-direction: column;
         border-radius: 0;
         border: 0;
         box-shadow: none;
-        background-color: rgba(0,0,0,0);
+        background-color: rgba(0, 0, 0, 0);
         width: fit-content;
     }
-
     .keyFeaturesContainer__box {
         background-color: white;
         border: solid #DBDBDB 1.5px;
-        box-shadow: 0px 0px 14px 6px rgba(0,0,0,0.12);
+        box-shadow: 0px 0px 14px 6px rgba(0, 0, 0, 0.12);
         border-radius: 15px;
         margin-bottom: 40px;
     }
-
     .keyFeaturesContainer__textArea {
         margin-bottom: 25px;
     }
-
 }
 
 @media (max-width: 1024px) {
-
     .middleSection__infoContainer {
         width: 70%;
         padding-left: 15px;
@@ -524,7 +516,6 @@ body {
     .middleSection__header {
         text-align: center;
         margin: 0 70px 40px 70px;
-        
     }
 }
 
@@ -544,7 +535,6 @@ body {
     .projectHeaderContainer {
         width: 80%;
     }
-
     .carouselWindow {
         width: 100%;
     }
@@ -563,11 +553,9 @@ body {
 }
 
 @media (max-width: 465px) {
-
     .bottomSection__keyFeaturesContainer {
         width: 90%;
     }
-
     .keyFeaturesContainer__box {
         width: 100%;
     }
